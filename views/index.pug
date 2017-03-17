@@ -1,0 +1,8 @@
+html
+  body
+      h3  当前用户名：
+        if  currentUser
+          span=currentUser
+          a(href='/logout') 退出
+        else
+          a(href='/login')  登录
